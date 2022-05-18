@@ -10,17 +10,25 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
+  font-family: "Eagle Lake", cursive, sans-serif;
   font-size: 1.6rem;
   background-color: grey;
-  font-family: "Eagle Lake", cursive, sans-serif;
 }
 
 /*navigation*/
+.menu__logo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  z-index: 99;
+}
+
 .menu__btn {
   position: fixed;
   top: 0;
@@ -31,51 +39,44 @@ body {
   z-index: 99;
 }
 
-.menu__logo {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  z-index: 99;
-}
-
 .menu__items {
   position: fixed;
   top: 0;
-  right: -100%;
+  left: -100%;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-transform: uppercase;
   font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
   z-index: 80;
-  text-align: center;
 }
 
 .menu__link {
   position: relative;
   width: 100%;
-  height: calc(100vh/8);
+  height: calc(100vh / 8);
+  line-height: calc(100vh / 8);
   text-decoration: none;
-  line-height: calc(100vh/8);
+  color: white;
 }
 
 .show__menu {
-  right: 0%;
+  left: 0%;
 }
 
 .ham {
@@ -105,7 +106,7 @@ body {
   fill: none;
   -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #fff;
+  stroke: white;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
@@ -138,9 +139,24 @@ body {
 .welcome {
   width: 100vw;
   height: 100vh;
-  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../images/img1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
 }
 
-/*about*/
-/*footer*/
+section {
+  width: 100vw;
+  height: 100vh;
+}
 /*# sourceMappingURL=style.css.map */

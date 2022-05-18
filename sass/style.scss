@@ -1,3 +1,5 @@
+$primaryFontColor: white;
+
 *,
 *::before,
 *::after {
@@ -9,14 +11,14 @@
 }
 
 html {
-	font-size: 62.5%;
 	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 
 body {
+	font-family: "Eagle Lake", cursive, sans-serif;
 	font-size: 1.6rem;
 	background-color: grey;
-	font-family: "Eagle Lake", cursive, sans-serif;
 }
 
 /*navigation*/
@@ -43,30 +45,31 @@ body {
 	&__items {
 		position: fixed;
 		top: 0;
-		right: -100%;
+		left: -100%;
 		width: 100vw;
 		height: 100vh;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
-		text-transform: uppercase;
 		font-size: 2rem;
+		text-align: center;
+		text-transform: uppercase;
 		transition: 0.7s ease-in-out;
 		z-index: 80;
-		text-align: center;
 	}
 	&__link {
 		position: relative;
 		width: 100%;
 		height: calc(100vh / 8);
-		text-decoration: none;
 		line-height: calc(100vh / 8);
+		text-decoration: none;
+		color: $primaryFontColor;
 	}
 }
 
 .show__menu {
-	right: 0%;
+	left: 0%;
 }
 
 .ham {
@@ -87,7 +90,7 @@ body {
 .line {
 	fill: none;
 	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-	stroke: $primaryColor;
+	stroke: $primaryFontColor;
 	stroke-width: 5.5;
 	stroke-linecap: round;
 }
@@ -116,6 +119,20 @@ body {
 .welcome {
 	width: 100vw;
 	height: 100vh;
-	background-color: grey;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	background-image: url(../../images/img1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: $primaryFontColor;
+
 }
 
+section {
+	width: 100vw;
+	height: 100vh;
+}
