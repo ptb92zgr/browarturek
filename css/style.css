@@ -1,7 +1,146 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: grey;
+  font-family: "Eagle Lake", cursive, sans-serif;
+}
+
+/*navigation*/
+.menu__btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  background: none;
+  border: none;
+  z-index: 99;
+}
+
+.menu__logo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  z-index: 99;
+}
+
+.menu__items {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  font-size: 2rem;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  z-index: 80;
+  text-align: center;
+}
+
+.menu__link {
+  position: relative;
+  width: 100%;
+  height: calc(100vh/8);
+  text-decoration: none;
+  line-height: calc(100vh/8);
+}
+
+.show__menu {
+  right: 0%;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham .top {
+  stroke-dasharray: 40 172;
+}
+
+.ham .middle {
+  stroke-dasharray: 40 111;
+}
+
+.ham .bottom {
+  stroke-dasharray: 40 172;
+}
+
+.ham.active .top {
+  stroke-dashoffset: -132px;
+}
+
+.ham.active .middle {
+  stroke-dashoffset: -71px;
+}
+
+.ham.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
+/*header*/
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+}
+
+/*about*/
+/*footer*/
 /*# sourceMappingURL=style.css.map */
