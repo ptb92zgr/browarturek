@@ -17,16 +17,24 @@ html {
 body {
   font-family: "Eagle Lake", cursive, sans-serif;
   font-size: 1.6rem;
-  background-color: grey;
+  background-image: url(../../images/img1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 /*navigation*/
+.menu {
+  position: relative;
+}
+
 .menu__logo {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  z-index: 99;
+  margin: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/logotransp.png);
+  background-size: contain;
 }
 
 .menu__btn {
@@ -61,6 +69,11 @@ body {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
+  background: rgba(80, 7, 8, 0.45);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(80, 7, 8, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(80, 7, 8, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
   z-index: 80;
@@ -69,8 +82,8 @@ body {
 .menu__link {
   position: relative;
   width: 100%;
-  height: calc(100vh / 8);
-  line-height: calc(100vh / 8);
+  height: calc(100vh / 6);
+  line-height: calc(100vh / 6);
   text-decoration: none;
   color: white;
 }
@@ -146,17 +159,75 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../../images/img1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   font-size: 2rem;
   text-transform: uppercase;
   color: white;
 }
 
-section {
+.welcome__text {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 4rem;
+}
+
+.content {
   width: 100vw;
-  height: 100vh;
+}
+
+.section {
+  border: none;
+  margin: 0 0 30px 0;
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+  background-color: #500708;
+  color: white;
+}
+
+.section__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 30px auto;
+  margin-bottom: 30px;
+}
+
+.section__subtitle {
+  margin: 30px auto;
+}
+
+.section__carousel {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.section__carousel-item {
+  width: 100%;
+  max-height: 225px;
+}
+
+.section__description {
+  margin: 20px 10px;
+}
+
+.section__salepoints {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__link {
+  text-decoration: none;
+  color: white;
+  margin: 5px 10px;
+}
+
+.section__img {
+  width: 100%;
+  max-height: 225px;
 }
 /*# sourceMappingURL=style.css.map */
