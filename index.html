@@ -17,8 +17,8 @@
 <body>
     <nav class="menu">
         <div class="menu__logo"></div>
-        <button class="menu__btn"><svg class="ham" viewBox="0 0 100 100" width="60"
-                onclick="this.classList.toggle('active')">
+        <button class="menu__btn">
+            <svg class="ham" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
                 <path class="line top"
                     d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
                 <path class="line middle"
@@ -27,16 +27,13 @@
                     d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
             </svg></button>
         <div class="menu__items">
-
             <a href="#about" class="menu__link">o nas</a>
             <a href="#beers" class="menu__link">nasze piwa</a>
             <a href="#brewhouse" class="menu__link">warzelnia</a>
             <a href="#awards" class="menu__link">nagrody</a>
             <a href="#salepoints" class="menu__link">gdzie nas kupić</a>
+            <a href="#suppliers" class="menu__link">dostawcy</a>
             <a href="#contact" class="menu__link">kontakt</a>
-
-
-
         </div>
     </nav>
     <header class="welcome">
@@ -44,7 +41,6 @@
     </header>
 
     <main class="content">
-
         <section id="about" class="section">
             <h2 class="section__title">o nas</h2>
             <div class="section__carousel">
@@ -56,118 +52,374 @@
             <p class="section__description">Browar Turek to wyjątkowe miejsce prowadzone z pasją i pomysłem. Oprócz
                 znakomitych wyrobów piwowarskich, Goście znajdą
                 tutaj doskonałą kuchnię oraz wyjątkową atmosferę.
-                <br>Warzymy osiem gatunków piwa. Do produkcji używamy
-                najwyższej jakości
-                składników i najnowszej technologii, pozwala to warzyć piwo o znakomitych walorach smakowych i
-                doskonałym aromacie.
-                <br>
-                Nasze Piwa to laureaci najbardziej prestiżowych konkursów piwnych:
-                Konkursu Piw Rzemieślniczych KPR 2019 oraz Greater Poland 2021 otrzymaliśmy złoty medal w kategorii Dry
-                Stout za piwo
-                Czarna Kaśka.
             </p>
+
+            <p class="section__description">Warzymy osiem gatunków piwa. Do produkcji używamy najwyższej jakości
+                składników i najnowszej technologii, pozwala to warzyć piwo o znakomitych walorach smakowych i
+                doskonałym aromacie.</p>
+
         </section>
         <section id="beers" class="section">
             <h2 class="section__title">nasze piwa</h2>
             <div class="section__carousel">
                 <h3 class="section__subtitle">ToURdePILS</h3>
-                <img src="../images/Beers/tourdepils.jpg" alt="Tourdepils" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium provident.</p>
+                <img class="section__img-margin" src="../images/Beers/tourdepils.jpg" alt="Tourdepils"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p><i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p><i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Pils niemiecki.
+                    Ekstrakt: 12.0 BLG. Warzone przy użyciu: Woda, słody (Pilzneński, CaraPils, Monachijski), chmiele
+                    (Iunga, Zula - 20.06.2022; 05.07.2022; Iunga, Saaz - 29.09.2022), drożdże Saflager W34-70.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Czarna Kaśka</h3>
-                <img src="../images/Beers/czarnakaska.jpg" alt="Czarna Kaśka" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/czarnakaska.jpg" alt="Czarna Kaśka"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Stout.
+                    Ekstrakt: 14.0 BLG. Warzone przy użyciu: Woda, słody (Pale Ale, Carafa III Special, Caramunich,
+                    Pszeniczny Czekoladowy, Carapils), płatki owsiane, chmiel Iunga, drożdże Safale S-04.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">WeizenTURek</h3>
-                <img src="../images/Beers/weizenturek.jpg" alt="Weizenturek" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/weizenturek.jpg" alt="Weizenturek"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Hefe-Weizen.
+                    Ekstrakt: 12.0 BLG. Warzone przy użyciu: Woda, słody (Pszeniczny, Pilzneński, CaraPils), płatki
+                    owsiane, chmiele (Iunga), drożdże WB-06.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Alba Capra</h3>
-                <img src="../images/Beers/albacapra.jpg" alt="Alba Capra" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/albacapra.jpg" alt="Alba Capra"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Weizenbock.
+                    Ekstrakt: 18.0 BLG. Warzone przy użyciu: Woda, słody (Pszeniczny, Monachijski Ciemny, Pilzneński,
+                    Special W, Special B, Pszeniczny Czekoladowy), chmiel (Iunga), drożdże Lallamand Wit.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Bursztynowa Afera</h3>
-                <img src="../images/Beers/bursztynowaafera.jpg" alt="Bursztynowa Afera" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/bursztynowaafera.jpg" alt="Bursztynowa Afera"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Lager Bursztynowy. Ekstrakt: 14.0 BLG. Warzone przy użyciu:
+                    Woda, słody (Pilzneński, Monachijski Ciemny, CaraPils), chmiel Iunga, drożdże Saflager W34-70.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">ROUTE 00</h3>
-                <img src="../images/Beers/route00.jpg" alt="Route 00" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/route00.jpg" alt="Route 00"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Chmielowość:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Bezalkoholowa IPA. Ekstrakt: 6.0 BLG. Warzone przy użyciu:
+                    Woda, słód jęczmienny, słód pszeniczny, laktoza, chmiel (Marynka, Centennial, Amarillo, Citra,
+                    Simcoe), drożdże (Safale S-33).
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Gosk</h3>
-                <img src="../images/Beers/gosk.jpg" alt="Gosk" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/gosk.jpg" alt="Gosk"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Porter bałtycki z solą morską. Ekstrakt: 22.0 BLG. Warzone
+                    przy użyciu: Woda, słody (Wiedeński, Monachijski Jasny, Caramunich typ III, Abbey, Special W,
+                    Pszeniczny Czekoladowy, Jęczmień Prażony, Carafa typ II), ekstrakt słodowy, chmiel Iunga, drożdże
+                    Saflager W34-70.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Cudzoziemiec</h3>
-                <img src="../images/Beers/cudzoziemiec.jpg" alt="Cudzoziemiec" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/cudzoziemiec.jpg" alt="Cudzoziemiec"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <p class="section__description">Styl piwa: Session IPA.
+                    Ekstrakt: 12.0 BLG. Warzone przy użyciu: Woda, słody (Pale Ale, Pszeniczny), płatki owsiane, chmiele
+                    (Sabro, Trident, Citra, Iunga), drożdże Safale US-05.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Belgijska Mgła</h3>
-                <img src="../images/Beers/belgijskamgla.jpg" alt="Belgijska Mgła" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/belgijskamgla.jpg" alt="Belgijska Mgła"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+
+                <p class="section__description">Styl piwa: Witbier. Ekstrakt: 12.0 BLG. Warzone przy użyciu:
+                    Woda, słody (Pilzneński, Pszeniczny), płatki pszenne, płatki owsiane, chmiel (Iunga), suszone skórki
+                    słodkiej pomarańczy, suszone, skórki gorzkiej pomarańczy Curacao, ziarna kolendry indyjskiej, zest z
+                    pomarańczy drożdże Lallamand Wit.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Hop's Na TURa</h3>
-                <img src="../images/Beers/hopsnatura.jpg" alt="Hop's na tura" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/hopsnatura.jpg" alt="Hop's na tura"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Chmielowość:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </div>
+                <p class="section__description">Styl piwa: Double IPA. Ekstrakt: 18.0 BLG. Warzone przy użyciu: Woda,
+                    słody (Pale Ale, Pszeniczny, Owsiany, CaraPils), płatki owsiane, chmiele (Nelson Sauvin, Citra,
+                    Trident, Iunga) drożdże Safale US-05.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">Fruit Plant</h3>
-                <img src="../images/Beers/fruitplant.jpg" alt="Fruit Plant" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/fruitplant.jpg" alt="Fruit Plant"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Owocowa słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+
+                <p class="section__description">Styl piwa: Fruit Sour Ale.
+                    Ekstrakt: 12.0 BLG. Warzone przy użyciu: Woda, słody (Pszeniczny, Pale Ale, CaraPils), płatki
+                    owsiane, chmiel Iunga, pulpa z malin, pulpa z moreli drożdże Safale US-05.
+                </p>
             </div>
             <div class="section__carousel">
                 <h3 class="section__subtitle">TURkawka</h3>
-                <img src="../images/Beers/turkawka.jpg" alt="Turkawka" class="section__carousel-item">
-                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                    accusantium
-                    provident.</p>
+                <img class="section__img-margin" src="../images/Beers/turkawka.jpg" alt="Turkawka"
+                    class="section__carousel-item">
+                <div class="section__taste">
+                    <p class="section__taste-margin">Goryczka:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Słodycz:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+                <div class="section__taste">
+                    <p class="section__taste-margin">Kawowość:</p>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle"></i>
+                </div>
+
+                <p class="section__description">Styl piwa: Coffee Stout. Ekstrakt: 14.0 BLG. Warzone przy użyciu: Woda,
+                    Słody (Pale Ale, Carafa typ III, Caramunich, Pszeniczny Czekoladowy, Carapils), płatki owsiane,
+                    Chmiel Iunga, Drożdże Safale S-04. Dodatki: Świeżo palona dominikańska kawa odmiany Constanza.
+                </p>
             </div>
         </section>
 
         <section id="brewhouse" class="section">
             <h2 class="section__title">warzelnia</h2>
-            <img src="../images/brewhouse1.jpg" alt="" class="section__img">
+            <img class="section__img-margin" src="../images/brewhouse1.jpg" alt="" class="section__img">
             <p class="section__description">Warzelnia do procesu technologicznego wykorzystuje parę dzięki czemu zużycie
                 energi elektrycznej jest znacząco mniejsze od
                 energochłonnych grzałek olejowych. Jest to "czystszy rodzaj produkcji", a parę można zwrotnie
-                wykorzystać
-                np do ogrzewania
-                budynku. 70% energii do produkcji piwa pozyskiwana jest z paneli fotowoltaicznych wykonanych przez<a
-                    href="https://www.apagroup.pl/browar-w-turku" class="section__link">APA Group</a>.</p>
+                wykorzystać np. do ogrzewania budynku. 70% energii do produkcji piwa pozyskiwana jest z paneli
+                fotowoltaicznych wykonanych przez
+                <a href="https://www.apagroup.pl/browar-w-turku" class="section__link">APA Group</a>.
+            </p>
         </section>
         <section id="awards" class="section card__slider">
             <h2 class="section__title">nagrody</h2>
-            <h3 class="section__subtitle"></h3>
+            <p class="section__description">Nasze Piwa to laureaci najbardziej prestiżowych konkursów piwnych:
+                Konkursu Piw Rzemieślniczych KPR 2019 oraz Greater Poland 2021 otrzymaliśmy złoty medal w kategorii Dry
+                Stout za piwo
+                Czarna Kaśka.
+            </p>
+            <h3 class="section__subtitle">Greater Poland 2021</h3>
+            <img class="section__img-margin" src="../images/Awards/gpbc.png" alt="" class="section__img">
+            <h3 class="section__subtitle">Konkursu Piw Rzemieślniczych 2019
+            </h3>
+            <img class="section__img-margin" src="../images/Awards/kpr.png" alt="" class="section__img">
         </section>
         <section id="salepoints" class="section">
             <div class="section__salepoints">
@@ -213,15 +465,55 @@
                 <a href="https://www.facebook.com/PiwotekaNarodowa/" class="section__link">Piwoteka sklep ks. Piotra
                     Skargi 12, Łódź</a>
             </div>
-
         </section>
-
-
-
-
+        <section id="suppliers" class="section">
+            <h2 class="section__title">Nasi dostawcy</h2>
+            <div class="section__suppliers">
+                <p class="section__description">To dzięki nim możecie doświadczyć wspaniałego smaku naszych produktów
+                </p>
+                <a href="https://browamator.pl/" class="section__link">Browamator</a>
+                <a href="https://vikingmalt.pl/" class="section__link">Vikingmalt</a>
+                <a href="https://www.apagroup.pl/" class="section__link">APA Group</a>
+                <a href="http://www.minibrowary.pl/" class="section__link">Minibrowary</a>
+            </div>
+        </section>
     </main>
 
-    <footer id="contact" class="footer"></footer>
+    <footer id="contact" class="footer">
+        <h3 class="footer__title">Kontakt:</h3>
+        <div class="footer__contact">
+            <div class="footer__address">
+                <i class="bi bi-geo-alt"></i>
+                <p class="footer__localization">Browar Turek
+                    62-700 Turek,
+                    al. NSZZ Solidarności</p>
+            </div>
+            <div class="footer__phone">
+                <i class="bi bi-telephone"></i>
+                <a href="tel:579553150" class="footer__link">579553150</a>
+            </div>
+            <div class="footer__mail">
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:biuro@browarturek.pl" class="footer__link">biuro@browarturek.pl</a>
+            </div>
+            <div class="footer__fb">
+                <i class="bi bi-facebook"></i>
+                <a href="https://www.facebook.com/search/top?q=browar%20turek" class="footer__link">Facebook</a>
+            </div>
+            <div class="footer__insta">
+                <i class="bi bi-instagram"></i>
+                <a href="https://www.instagram.com/browar_turek/" class="footer__link">Instagram</a>
+            </div>
+            <div class="footer__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2455.5861576445923!2d18.52400241554358!3d52.01441858132611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471b1f3536240865%3A0x7902128d9c37b154!2sBrowar%20Turek!5e0!3m2!1spl!2spl!4v1653388573134!5m2!1spl!2spl"
+                    width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <img src="../images/planszainformacyjnaPFRpoziom.jpeg" alt="Plansza informacyjna PFR" class="footer__img">
+        <p class="footer__copyright">&copy; Copyright by Browar Turek 2022</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
